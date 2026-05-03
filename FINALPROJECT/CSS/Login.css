@@ -1,0 +1,20 @@
+﻿#userName, #password, #submit {
+    font-size: large;
+    width: 180px;
+    font-style: italic;
+    text-align:center;
+    margin-right:5px;
+}
+#MoveRight {
+    margin-left: 650px;
+    font-size: large;
+    width: 180px;
+    font-style: italic;
+    text-align: center;
+    margin-right: 5px;
+}
+body {
+    background-image: url('../images/honeycomb-cyber-security-de1nra84qghymwjm.jpg');
+    background-size: cover; /* This is usually what you want for full-page backgrounds */
+    background-position: center center;
+}

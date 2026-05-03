@@ -1,0 +1,39 @@
+﻿body {
+    background-image: url('../images/green-background-green-abstract-background-green-background-design-illustration-abstract-futuristic-background-green-gradient-background-website-background-free-vector.jpg');
+    background-size: cover; /* This is usually what you want for full-page backgrounds */
+    background-position: center center;
+    text-align: right;
+    font-style: italic;
+}
+h1 {
+    padding-right: 200px;
+    padding-left: 200px;
+}
+h2{padding-right:200px;
+   padding-left:200px;
+}
+#LoginLink{    text-align:center ;
+               font-size:40px;
+               margin-bottom:200px;
+               margin-right:270px;
+}
+#Contact{
+    text-align:center;
+    font-size: 34px;
+    margin-right:750px;
+
+}
+table {
+    margin-left: auto;
+    text-align: left;
+    border: 5px solid;
+    padding: 2px;
+    border-collapse: collapse;
+    font-size: 40px;
+    text-align: center;
+    background-color:white;
+}
+td,tr{border: 2px solid;
+      border-collapse:collapse;
+}
+

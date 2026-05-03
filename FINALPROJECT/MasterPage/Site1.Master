@@ -1,0 +1,74 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="FINALPROJECT.MasterPage.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+<link href="<%= ResolveUrl("~/CSS/MasterPage.css") %>" rel="stylesheet" />
+
+    <%-- זהו placeholder עבור תוכן שישמש כתגיות <head> בדפים המשתמשים בדף המאסטר הזה.
+         כאן תוכלו להוסיף קישורים לקבצי CSS, סקריפטים של JavaScript, מטא תגיות ועוד,
+         שיהיו ספציפיים לכל עמוד תוכן, אך עדיין יהיו חלק מה-head של הדף הכללי. --%>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+         <table class="MasterTable">
+             <tr>
+                 <td id="Title" class="tdMaster">
+               Prehistoric Mammals: Giants of the Past
+
+
+                 </td>
+                 <td id="Name" runat="server" class="tdMaster">
+                     <%="<div> wellcome " + (Session["userName"]) %>
+                 </td>
+                 </tr>
+             </table>
+       </div>
+        <div>
+                 <table id="LinkTable">
+                     <tr class="Links">
+                                                           <td>
+<a href="<%= ResolveUrl("~/Pages/Main.aspx") %>">Main:</a>
+
+         </td>
+                         <td>
+                <a href="<%= ResolveUrl("~/Login/Register.aspx") %>">Register:</a>
+
+                         </td>
+             
+                 <td>
+                     <a href="<%= ResolveUrl("~/Login/Login.aspx") %>">Login:</a>
+                 </td>
+                 <td>
+<a href="<%= ResolveUrl("~/Pages/Page1.aspx") %>">תילקולאו </a>
+                     </td>
+                         <td>
+<a href="<%= ResolveUrl("~/Pages/Page2.aspx") %>">  הממותה הצמרית
+  </a>
+                             </td>
+                         <td>
+<a href="<%= ResolveUrl("~/Pages/Page3.aspx") %>"> מגאתריום
+ </a>
+                             </td> 
+                         <td>
+<a href="<%= ResolveUrl("~/Pages/Page4.aspx") %>">  אנדרוסארכוס </a>
+                             </td>
+                                                <td>
+<a href="<%= ResolveUrl("~/Pages/Page5.aspx") %>">  סמילודון </a>
+
+                 </td>           
+
+             </tr>
+         </table>
+    </div>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>     
+    </form>
+</body>
+</html>
